@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25795C65286DD06400AB1C29 /* ModuleB.h in Headers */ = {isa = PBXBuildFile; fileRef = 25795C64286DD06400AB1C29 /* ModuleB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25795C6D286DD0AA00AB1C29 /* ModuleA in Frameworks */ = {isa = PBXBuildFile; productRef = 25795C6C286DD0AA00AB1C29 /* ModuleA */; };
 		25795C77286DD0E900AB1C29 /* SwiftClassB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25795C76286DD0E900AB1C29 /* SwiftClassB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		25795C61286DD06400AB1C29 /* ModuleB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModuleB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		25795C64286DD06400AB1C29 /* ModuleB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleB.h; sourceTree = "<group>"; };
 		25795C76286DD0E900AB1C29 /* SwiftClassB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftClassB.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +48,6 @@
 		25795C63286DD06400AB1C29 /* ModuleB */ = {
 			isa = PBXGroup;
 			children = (
-				25795C64286DD06400AB1C29 /* ModuleB.h */,
 				25795C76286DD0E900AB1C29 /* SwiftClassB.swift */,
 			);
 			path = ModuleB;
@@ -70,7 +67,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25795C65286DD06400AB1C29 /* ModuleB.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
