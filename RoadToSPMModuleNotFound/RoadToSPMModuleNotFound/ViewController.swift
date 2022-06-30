@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         let test = SwiftClassB()
         test.prop = 4
+
+        let objc = ObjcClass()
+        objc.swiftclass.prop = 4
     }
 
 
