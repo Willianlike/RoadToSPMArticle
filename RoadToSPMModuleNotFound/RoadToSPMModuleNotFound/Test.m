@@ -8,11 +8,12 @@
 #import <Foundation/Foundation.h>
 #import "Test.h"
 #import <ModuleB/ModuleB-Swift.h>
+#import "RoadToSPMModuleNotFound-Swift.h"
 
 @implementation ObjcClass
 
 -(void) doStuff {
-    self.swiftclass.prop = 4;
+    self.swiftContainer.swiftclass.prop = 4;
 }
 
 @end

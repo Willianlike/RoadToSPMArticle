@@ -7,10 +7,10 @@
 
 #import <Foundation/Foundation.h>
 
-@class SwiftClassB;
+@class ObjcClassContainer;
 
 @interface ObjcClass : NSObject
 
-@property SwiftClassB *swiftclass;
+@property ObjcClassContainer *swiftContainer;
 
 @end

@@ -16,9 +16,12 @@ class ViewController: UIViewController {
         test.prop = 4
 
         let objc = ObjcClass()
-        objc.swiftclass.prop = 4
+        objc.swiftContainer.swiftclass.prop = 4
     }
 
+}
 
+@objc class ObjcClassContainer: NSObject {
+    @objc var swiftclass: SwiftClassB = .init()
 }
 
