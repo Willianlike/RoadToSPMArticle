@@ -8,6 +8,7 @@
 import UIKit
 import ModuleA
 import ModuleB
+import ObjcPackage
 
 class ViewController: UIViewController {
 
@@ -17,6 +18,9 @@ class ViewController: UIViewController {
 
         let objc = ObjcClass()
         objc.swiftContainer.swiftclass.prop = 4
+
+        let objcPackageClass = ObjcPackageClass()
+        objcPackageClass.array.add(self)
     }
 
 }

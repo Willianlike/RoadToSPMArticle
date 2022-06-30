@@ -18,7 +18,20 @@
 		25795C73286DD0B700AB1C29 /* ModuleB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25795C71286DD0B700AB1C29 /* ModuleB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		25795C75286DD0DD00AB1C29 /* ModuleA in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 25795C6F286DD0B400AB1C29 /* ModuleA */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		25795C7B286DD4D000AB1C29 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 25795C7A286DD4D000AB1C29 /* Test.m */; };
+		25795C89286DDBCA00AB1C29 /* RoadToSPMModuleNotFoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25795C88286DDBCA00AB1C29 /* RoadToSPMModuleNotFoundTests.swift */; };
+		25795C90286DE14800AB1C29 /* ObjcPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 25795C8F286DE14800AB1C29 /* ObjcPackage */; };
+		25795C91286DE14800AB1C29 /* ObjcPackage in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 25795C8F286DE14800AB1C29 /* ObjcPackage */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25795C8A286DDBCA00AB1C29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25795C38286DD01600AB1C29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25795C3F286DD01600AB1C29;
+			remoteInfo = RoadToSPMModuleNotFound;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		25795C74286DD0B800AB1C29 /* Embed Frameworks */ = {
@@ -28,6 +41,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				25795C75286DD0DD00AB1C29 /* ModuleA in Embed Frameworks */,
+				25795C91286DE14800AB1C29 /* ObjcPackage in Embed Frameworks */,
 				25795C73286DD0B700AB1C29 /* ModuleB.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -48,6 +62,8 @@
 		25795C78286DD4BE00AB1C29 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		25795C79286DD4D000AB1C29 /* RoadToSPMModuleNotFound-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RoadToSPMModuleNotFound-Bridging-Header.h"; sourceTree = "<group>"; };
 		25795C7A286DD4D000AB1C29 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		25795C86286DDBCA00AB1C29 /* RoadToSPMModuleNotFoundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoadToSPMModuleNotFoundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25795C88286DDBCA00AB1C29 /* RoadToSPMModuleNotFoundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadToSPMModuleNotFoundTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +72,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				25795C70286DD0B400AB1C29 /* ModuleA in Frameworks */,
+				25795C90286DE14800AB1C29 /* ObjcPackage in Frameworks */,
 				25795C72286DD0B700AB1C29 /* ModuleB.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25795C83286DDBCA00AB1C29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				25795C42286DD01600AB1C29 /* RoadToSPMModuleNotFound */,
+				25795C87286DDBCA00AB1C29 /* RoadToSPMModuleNotFoundTests */,
 				25795C41286DD01600AB1C29 /* Products */,
 				25795C6E286DD0B400AB1C29 /* Frameworks */,
 			);
@@ -76,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				25795C40286DD01600AB1C29 /* RoadToSPMModuleNotFound.app */,
+				25795C86286DDBCA00AB1C29 /* RoadToSPMModuleNotFoundTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +131,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		25795C87286DDBCA00AB1C29 /* RoadToSPMModuleNotFoundTests */ = {
+			isa = PBXGroup;
+			children = (
+				25795C88286DDBCA00AB1C29 /* RoadToSPMModuleNotFoundTests.swift */,
+			);
+			path = RoadToSPMModuleNotFoundTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,10 +158,29 @@
 			name = RoadToSPMModuleNotFound;
 			packageProductDependencies = (
 				25795C6F286DD0B400AB1C29 /* ModuleA */,
+				25795C8F286DE14800AB1C29 /* ObjcPackage */,
 			);
 			productName = RoadToSPMModuleNotFound;
 			productReference = 25795C40286DD01600AB1C29 /* RoadToSPMModuleNotFound.app */;
 			productType = "com.apple.product-type.application";
+		};
+		25795C85286DDBCA00AB1C29 /* RoadToSPMModuleNotFoundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25795C8C286DDBCA00AB1C29 /* Build configuration list for PBXNativeTarget "RoadToSPMModuleNotFoundTests" */;
+			buildPhases = (
+				25795C82286DDBCA00AB1C29 /* Sources */,
+				25795C83286DDBCA00AB1C29 /* Frameworks */,
+				25795C84286DDBCA00AB1C29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25795C8B286DDBCA00AB1C29 /* PBXTargetDependency */,
+			);
+			name = RoadToSPMModuleNotFoundTests;
+			productName = RoadToSPMModuleNotFoundTests;
+			productReference = 25795C86286DDBCA00AB1C29 /* RoadToSPMModuleNotFoundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -142,6 +195,10 @@
 					25795C3F286DD01600AB1C29 = {
 						CreatedOnToolsVersion = 13.2.1;
 						LastSwiftMigration = 1320;
+					};
+					25795C85286DDBCA00AB1C29 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 25795C3F286DD01600AB1C29;
 					};
 				};
 			};
@@ -159,6 +216,7 @@
 			projectRoot = "";
 			targets = (
 				25795C3F286DD01600AB1C29 /* RoadToSPMModuleNotFound */,
+				25795C85286DDBCA00AB1C29 /* RoadToSPMModuleNotFoundTests */,
 			);
 		};
 /* End PBXProject section */
@@ -171,6 +229,13 @@
 				25795C50286DD01900AB1C29 /* LaunchScreen.storyboard in Resources */,
 				25795C4D286DD01900AB1C29 /* Assets.xcassets in Resources */,
 				25795C4B286DD01600AB1C29 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25795C84286DDBCA00AB1C29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +253,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		25795C82286DDBCA00AB1C29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25795C89286DDBCA00AB1C29 /* RoadToSPMModuleNotFoundTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25795C8B286DDBCA00AB1C29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25795C3F286DD01600AB1C29 /* RoadToSPMModuleNotFound */;
+			targetProxy = 25795C8A286DDBCA00AB1C29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		25795C49286DD01600AB1C29 /* Main.storyboard */ = {
@@ -385,6 +466,40 @@
 			};
 			name = Release;
 		};
+		25795C8D286DDBCA00AB1C29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.roadToSPM.RoadToSPMModuleNotFoundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoadToSPMModuleNotFound.app/RoadToSPMModuleNotFound";
+			};
+			name = Debug;
+		};
+		25795C8E286DDBCA00AB1C29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.roadToSPM.RoadToSPMModuleNotFoundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoadToSPMModuleNotFound.app/RoadToSPMModuleNotFound";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -406,12 +521,25 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		25795C8C286DDBCA00AB1C29 /* Build configuration list for PBXNativeTarget "RoadToSPMModuleNotFoundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25795C8D286DDBCA00AB1C29 /* Debug */,
+				25795C8E286DDBCA00AB1C29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		25795C6F286DD0B400AB1C29 /* ModuleA */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ModuleA;
+		};
+		25795C8F286DE14800AB1C29 /* ObjcPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ObjcPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

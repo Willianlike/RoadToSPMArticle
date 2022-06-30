@@ -1,0 +1,3 @@
+module ObjcPackage {
+    header "ObjcPackageClass.h"
+}

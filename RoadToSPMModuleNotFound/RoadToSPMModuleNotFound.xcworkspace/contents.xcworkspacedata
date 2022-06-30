@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ObjcPackage">
+   </FileRef>
+   <FileRef
       location = "group:ModuleA">
    </FileRef>
    <FileRef
